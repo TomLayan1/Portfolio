@@ -42,7 +42,7 @@ const Header = () => {
 
 
   return (
-    <div className='bg-black text-goldColor w-full h-[70px] lg:h-[85px] fixed top-0 left-0 flex items-center justify-between px-5 lg:px-16'>
+    <div className='text-goldColor bg-black w-full h-[70px] lg:h-[85px] fixed top-0 left-0 flex items-center justify-between px-8 lg:px-16 z-50'>
       <div className='text-2xl font-extrabold z-50'>TOMISIN</div>
       <motion.div
        initial={{ opacity: 0 }}
@@ -65,7 +65,7 @@ const Header = () => {
         </motion.div>
         </motion.div>
       </motion.div>
-      <div onClick={() => setShowMenu(!showMenu)} className='z-50'>{showMenu ? <FaTimes size={25} /> : <FaBars size={25}/>}</div>
+      <div onClick={() => setShowMenu(!showMenu)} className='z-50 cursor-pointer'>{showMenu ? <FaTimes size={25} /> : <FaBars size={25}/>}</div>
     </div>
   )
 }
