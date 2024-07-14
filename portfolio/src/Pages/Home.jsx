@@ -1,15 +1,14 @@
 import React from 'react'
 import Hero from '../Components/Hero'
-import Technologies from '../Components/Technologies'
+import About from '../Components/About'
 import Contact from '../Components/Contact'
 
 const Home = () => {
   return (
-    <div className='w-full h-[100vh]'>
+    <div className='w-full'>
       <section id='home'><Hero /></section>
-      <section id='technologies'><Technologies/></section>
+      <section id='about'><About /></section>
       <section id='contact'><Contact /></section>
-      <section></section>
     </div>
   )
 }
